@@ -28,11 +28,11 @@ public class Rental {
                   thisAmount += (daysRented - 2) * 1.5;
               break;
           case Movie.NEW_RELEASE:
-              thisAmount += getDaysRented() * 3;
+              thisAmount += daysRented * 3;
               break;
           case Movie.CHILDRENS:
               thisAmount += 1.5;
-              if (getDaysRented() > 3)
+              if (daysRented > 3)
                   thisAmount += (daysRented - 3) * 1.5;
               break;
       }
