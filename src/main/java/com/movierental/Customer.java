@@ -21,15 +21,15 @@ public class Customer {
 
     public String statement() {
 
-        String result = "Rental Record for " + getName() + "\n";
+        String result = "Rental Record for " + getName() + "<br>";
         for (Rental rental : rentals) {
             //show figures for this rental
             result += "\t" + rental.getMovie().getTitle() + "\t" +
-                    String.valueOf(rental.amount()) + "\n";
+                    String.valueOf(rental.amount()) + "<br>";
         }
 
         //add footer lines result
-        result += "Amount owed is " + String.valueOf(totalAmount()) + "\n";
+        result += "Amount owed is " + String.valueOf(totalAmount()) + "<br>";
         result += "You earned " + String.valueOf(frequentRenterPoints())
                 + " frequent renter points";
         return result;
@@ -49,6 +49,20 @@ public class Customer {
         return totalAmount;
     }
 
+    public String htmlstatement() {
+        String result = "<h1>Rental Record for <b>" + getName() + "</b></h1><br>";
+        for (Rental rental : rentals) {
+            //show figures for this rental
+            result += rental.getMovie().getTitle() + " " +
+                    String.valueOf(rental.amount()) + "<br>";
+        }
+
+        //add footer lines result
+        result += "Amount owed is <b>" + String.valueOf(totalAmount()) + "</b> <br>";
+        result += "You earned <b>" + String.valueOf(frequentRenterPoints())
+                + "</b> frequent renter points";
+        return result;
+    }
 }
 
 
