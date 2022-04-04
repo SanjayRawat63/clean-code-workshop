@@ -26,9 +26,7 @@ public class Customer {
         for (Rental each : rentals) {
             double thisAmount = each.amount();
             // add frequent renter points
-            frequentRenterPoints++;
-            // add bonus for a two day new release rental
-            frequentRenterPoints = each.calculateFrequentRenterPointsForEachRenatal(frequentRenterPoints);
+            frequentRenterPoints += each.FrequentRenterPoints();
 
             //show figures for this rental
             result += "\t" + each.getMovie().getTitle() + "\t" +
