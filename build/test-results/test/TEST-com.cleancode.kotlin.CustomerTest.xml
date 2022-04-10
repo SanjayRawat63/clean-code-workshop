@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.cleancode.kotlin.CustomerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-04-10T03:00:17" hostname="ERROR404" time="0.117">
+  <properties/>
+  <testcase name="shouldCheckIfCustomerHtmlStatementIsCorrect()" classname="com.cleancode.kotlin.CustomerTest" time="0.113"/>
+  <testcase name="shouldCheckIfCustomerStatementIsCorrect()" classname="com.cleancode.kotlin.CustomerTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
