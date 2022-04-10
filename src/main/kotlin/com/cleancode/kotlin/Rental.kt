@@ -1,6 +1,5 @@
 package com.cleancode.kotlin
 
-
 data class Rental(val movie: Movie, val daysRented: Int) {
     fun amount(): Double {
         var thisAmount = 0.0

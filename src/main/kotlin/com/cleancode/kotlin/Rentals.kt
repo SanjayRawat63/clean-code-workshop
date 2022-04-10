@@ -1,5 +1,4 @@
 package com.cleancode.kotlin
-
 class Rentals : ArrayList<Rental>() {
     fun totalAmount(rentals: Rentals): Double {
         return rentals.map{rental->rental.amount()}.sum()

@@ -3,6 +3,7 @@ package com.cleancode.kotlin
 import java.util.stream.Collectors
 
 class TextStatement {
+
     fun display(rentals: Rentals, customerName: String): String {
         var result: String = "Rental Record for " + customerName + "\n"
         result += rentals.stream()

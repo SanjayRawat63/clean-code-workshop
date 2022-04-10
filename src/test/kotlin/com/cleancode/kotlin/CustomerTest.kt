@@ -3,7 +3,6 @@ package com.cleancode.kotlin
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
-
 class CustomerTest {
     @Test
     fun shouldCheckIfCustomerStatementIsCorrect() {

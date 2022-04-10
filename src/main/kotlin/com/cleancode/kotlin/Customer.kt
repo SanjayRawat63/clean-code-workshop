@@ -1,12 +1,13 @@
 package com.cleancode.kotlin
 
 data class Customer(val name: String) {
-     var rentals =Rentals()
+    var rentals = Rentals()
 
     fun addRental(rental: Rental) {
         rentals.add(rental)
     }
-    fun Textstatement(): String{
+
+    fun Textstatement(): String {
         return TextStatement().display(rentals, name)
     }
 
